@@ -9,10 +9,10 @@ app.get('/', (req,res)=> {
 
 app.get('/page2', (req,res)=> {
     res.send('page2');
-})
+});
 
 app.post('/postme', (req,res)=> {
     res.send(`thank you ${req.body.name} `);
-})
+});
 
-app.listen(3000);
+app.listen(3000, () => console.log('app running on port 3000'));
